@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .layout-container {
+        @apply mx-auto max-w-[1250px];
+    }
+
+    .margin-y {
+        @apply my-[100px];
+    }
+}
+
+/* customization for react calender  */
+.react-calendar {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #A37C45 !important;
+}
+
+/* marquee custom styles */
+.rfm-child {
+    margin-left: 100px !important;
+}
